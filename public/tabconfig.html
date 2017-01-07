@@ -6,17 +6,13 @@
   <body>
     <form>
       <p style="background-color: #ececf9; padding: 5px;"> ChartID: <input type="text" id="chartID" name="chartID" value="chartID" size="40" onclick="onClick()">
-      <br>
-      <input type="radio" name="access" value="read" onclick="onClick()"> Read
-      <br>
-      <input type="radio" name="access" value="edit" onclick="onClick()"> Edit
       </p>
     </form>
     <br>
     <br>
     <br>
     <br>
-    v0.1
+    v0.1.1
 
     <script src="https://statics.teams.microsoft.com/sdk/v0.3/js/MicrosoftTeams.min.js"></script>
 
@@ -26,14 +22,14 @@
           var input = document.getElementById('chartID');
           var id = input.value;
           //e5eee740-76f7-4027-837f-27920a52b899#
-         var radios = document.getElementsByName('access');
+        // var radios = document.getElementsByName('access');
          var url = "";
-         if(radios[0].checked){ //Read Only
+         //if(radios[0].checked){ //Read Only
            url = "https://www.lucidchart.com/documents/view/" + id;
-         }
-         else{ //Edit
-           url = "https://www.lucidchart.com/documents/embeddedchart/" + id; 
-         }
+        // }
+        // else{ //Edit
+        //   url = "https://www.lucidchart.com/documents/embeddedchart/" + id; 
+        // }
          
          
           microsoftTeams.settings.setSettings({
