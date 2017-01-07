@@ -5,10 +5,7 @@
 <html>
   <body>
     <form>
-      
-      <p style="background-color: white;"> ChartID: <input type="text" id="chartID" name="chartID" value="chartID" onclick="onClick()"></p>
-      
-      
+      <p style="background-color: #ececf9; padding: 5px;"> ChartID: <input type="text" id="chartID" name="chartID" value="chartID" onclick="onClick()"></p>
     </form>
 
     <script src="https://statics.teams.microsoft.com/sdk/v0.3/js/MicrosoftTeams.min.js"></script>
@@ -16,24 +13,17 @@
     <script type="text/javascript">
        microsoftTeams.initialize();
        microsoftTeams.settings.registerOnSaveHandler(function(saveEvent) {
-        var input = document.getElementsByName('chartID');
-        var id = input.value;
-         //ae71d316-7d35-40e0-8373-7d3c37703c9a
-        if (radios[0].checked) {
+          var input = document.getElementsByName('chartID');
+          var id = input.value;
+          //ae71d316-7d35-40e0-8373-7d3c37703c9a
+
           microsoftTeams.settings.setSettings({
             contentUrl: "https://www.lucidchart.com/documents/view/" + id,
             suggestedTabName: "LucidChart",
             websiteUrl: "https://www.lucidchart.com/documents/view/" + id,
             removeUrl: "https://coreybmt.github.io/LucidChartTab/public/tabremove.html"
           });
-        } else {
-          microsoftTeams.settings.setSettings({
-            contentUrl: "https://www.bing.com/maps/embed",
-            suggestedTabName: "Google Map",
-            websiteUrl: "https://www.google.com/maps",
-            removeUrl: "https://coreybmt.github.io/LucidChartTab/public/tabremove.html"
-          });
-        }
+       
          saveEvent.notifySuccess();
        });
 
