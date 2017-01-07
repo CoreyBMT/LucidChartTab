@@ -13,13 +13,9 @@
 
     <script type="text/javascript">
       microsoftTeams.initialize();
-      microsoftTeams.settings.registerOnRemoveHandler(function(removeEvent) {
-        var radios = document.getElementsByName('removetype');
-        if (radios[0].checked) {
-          // Delete the map and all its data from the underlying service.
-        }
+      microsoftTeams.settings.registerOnRemoveHandler(function(removeEvent) {  
         removeEvent.notifySuccess();
-      });
+     );
 
       function onClick() {
         microsoftTeams.settings.setValidityState(true);
