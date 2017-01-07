@@ -15,22 +15,22 @@
     <script type="text/javascript">
        microsoftTeams.initialize();
        microsoftTeams.settings.registerOnSaveHandler(function(saveEvent) {
-      //   var radios = document.getElementsByName('maptype');
-      //   if (radios[0].checked) {
-      //     microsoftTeams.settings.setSettings({
-      //       contentUrl: "https://www.bing.com/maps/embed",
-      //       suggestedTabName: "Bing Map",
-      //       websiteUrl: "https://www.bing.com/maps",
-      //       removeUrl: window.location.origin + "/tabremove.html"
-      //     });
-      //   } else {
-      //     microsoftTeams.settings.setSettings({
-      //       contentUrl: "https://www.google.com/maps/embed",
-      //       suggestedTabName: "Google Map",
-      //       websiteUrl: "https://www.google.com/maps",
-      //       removeUrl: window.location.origin + "/tabremove.html"
-      //     });
-      //   }
+        var radios = document.getElementsByName('maptype');
+        if (radios[0].checked) {
+          microsoftTeams.settings.setSettings({
+            contentUrl: "https://www.bing.com/maps/embed",
+            suggestedTabName: "Bing Map",
+            websiteUrl: "https://www.bing.com/maps",
+            removeUrl: window.location.origin + "/tabremove.html"
+          });
+        } else {
+          microsoftTeams.settings.setSettings({
+            contentUrl: "https://www.google.com/maps/embed",
+            suggestedTabName: "Google Map",
+            websiteUrl: "https://www.google.com/maps",
+            removeUrl: window.location.origin + "/tabremove.html"
+          });
+        }
          saveEvent.notifySuccess();
        });
 
