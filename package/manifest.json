@@ -1,0 +1,35 @@
+{
+  "$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",
+  "manifestVersion": "0.2",
+  "id": "io.hewmen.LucidChart",
+  "version": "0.1",
+  "name": "LucidChart",
+  
+
+  "developer": {
+    "name": "BMT",   
+    "websiteUrl": "http://hewmen.io",
+    "privacyUrl": "http://hewmen.io",
+    "termsOfUseUrl": "hewmen.io",
+    "contentUrl": "https://www.lucidchart.com/documents/view/ae71d316-7d35-40e0-8373-7d3c37703c9a",
+    "suggestedTabName": "LucidChart"
+  },
+  "description" : {
+    "short": "Host LucidChart or Visio.",
+    "full": "Host a LucidChart or Visio diagram.  Input chart ID and select Save."
+  },
+  "icons": {
+    "44": "lc44.png",
+    "88": "lc88.png"
+  },
+  "configUrl": "https://teams-get-started-sample.azurewebsites.net/tabconfig.html",
+  "accentColor" : "#223344",
+  "canUpdateConfig": false,
+  "needsIdentity": false,
+  "validDomains": [
+    "*.lucidchart.com",
+    "*.coreyclarkphd.com",
+    "*.balancedmediatechnology.com",
+    "*.hewmen.io"
+  ]
+}
