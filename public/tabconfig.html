@@ -13,8 +13,8 @@
     <script src="https://statics.teams.microsoft.com/sdk/v0.3/js/MicrosoftTeams.min.js"></script>
 
     <script type="text/javascript">
-      // microsoftTeams.initialize();
-      // microsoftTeams.settings.registerOnSaveHandler(function(saveEvent) {
+       microsoftTeams.initialize();
+       microsoftTeams.settings.registerOnSaveHandler(function(saveEvent) {
       //   var radios = document.getElementsByName('maptype');
       //   if (radios[0].checked) {
       //     microsoftTeams.settings.setSettings({
@@ -31,11 +31,11 @@
       //       removeUrl: window.location.origin + "/tabremove.html"
       //     });
       //   }
-      //   saveEvent.notifySuccess();
-      // });
+         saveEvent.notifySuccess();
+       });
 
-      // function onClick() {
-      //   microsoftTeams.settings.setValidityState(true);
+       function onClick() {
+         microsoftTeams.settings.setValidityState(true);
       }
     </script>
   </body>
