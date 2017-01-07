@@ -7,7 +7,7 @@
     <form>
       <input type="radio" name="maptype" value="bing" onclick="onClick()"> Lucid
       <br>
-      <input type="radio" name="maptype" value="google" onclick="onClick()"> YouTube 
+      <input type="radio" name="maptype" value="google" onclick="onClick()"> Bing 
     </form>
 
     <script src="https://statics.teams.microsoft.com/sdk/v0.3/js/MicrosoftTeams.min.js"></script>
@@ -25,7 +25,7 @@
           });
         } else {
           microsoftTeams.settings.setSettings({
-            contentUrl: "https://www.youtube.com/embed/ONEClme8Lco?rel=0",
+            contentUrl: "https://www.bing.com/maps/embed",
             suggestedTabName: "Google Map",
             websiteUrl: "https://www.google.com/maps",
             removeUrl: "https://coreybmt.github.io/LucidChartTab/public/tabremove.html"
