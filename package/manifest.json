@@ -22,7 +22,7 @@
     "44": "lc44.png",
     "88": "lc88.png"
   },
-  "configUrl": "https://teams-get-started-sample.azurewebsites.net/tabconfig.html",
+  "configUrl": "https://http://coreyclarkphd.com/LucidChartTab/public/tabconfig.html",
   "accentColor" : "#223344",
   "canUpdateConfig": false,
   "needsIdentity": false,
