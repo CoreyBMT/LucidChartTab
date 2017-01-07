@@ -5,7 +5,12 @@
 <html>
   <body>
     <form>
-      <p style="background-color: #ececf9; padding: 5px;"> ChartID: <input type="text" id="chartID" name="chartID" value="chartID" size="40" onclick="onClick()"></p>
+      <p style="background-color: #ececf9; padding: 5px;"> ChartID: <input type="text" id="chartID" name="chartID" value="chartID" size="40" onclick="onClick()">
+      <br>
+      <input type="radio" name="read" value="read" onclick="onClick()"> Read
+      <br>
+      <input type="radio" name="edit" value="edit" onclick="onClick()"> Edit
+      </p>
     </form>
 
     <script src="https://statics.teams.microsoft.com/sdk/v0.3/js/MicrosoftTeams.min.js"></script>
@@ -17,6 +22,7 @@
           var id = input.value;
           //ae71d316-7d35-40e0-8373-7d3c37703c9a
          
+         //View or Edit
           microsoftTeams.settings.setSettings({
             contentUrl: "https://www.lucidchart.com/documents/view/" + id,
             suggestedTabName: "LucidChart",
